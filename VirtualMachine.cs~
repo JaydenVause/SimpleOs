@@ -8,10 +8,10 @@ namespace SimpleOs{
 		private ProcessManager processManager;
 	
 		public VirtualMachine(int memorySize){
-			this.memorySize = memorySize;
-			memory = new byte[memorySize];
-			memoryManager = new(memory);
-			processManager = new();
+			this.memorySize = memorySize; // define memory for machine
+			memory = new byte[memorySize]; // give memorySize amounts of bites to this instances memory
+			memoryManager = new(memory); // create a new MemoryManager to handle memory
+			processManager = new(); // create a new ProcessManager to handle process's
 		}
 
 		public void Initialize(){
@@ -20,34 +20,21 @@ namespace SimpleOs{
 
 		public void Run(){
 			Console.WriteLine("Virtual Machine running...");
-			Bootloader();
+			Bootloader(); // bootloader responsible for loading OS into memory and starting it
 		}
 
 		public void Bootloader(){
 			Console.WriteLine("Bootloader: Loading the kernel...");
-			Kernel();
+			Kernel(); // Core of the OS handles process management, memory management and I/O operations
 		}
 
 		private void Kernel(){
 			Console.WriteLine("Kernel: OS is running!");
 
 			Console.WriteLine("Kernel: Creating a process...");
-			int processId = processManager.CreateProcess(() => {
-				Console.WriteLine("Process: Running task...");
-				
-				for(int i = 0; i < 3; i ++){
-					Console.WriteLine($"Process: Task itteration {i}");
-				}		
-			});
-			
-			// run sample process
-			Console.WriteLine("Kernel: Running process...");
-			processManager.RunProcess(processId);
+			processManager.CreateProcess(()=>{Console.WriteLine("HelloWorld");});
 
-			// kill sample process
-			Console.WriteLine("Kernel: Killing process");
-			processManager.KillProcess(processId);
-
+			processManager.RunAllProcesses();
 		}
 
 

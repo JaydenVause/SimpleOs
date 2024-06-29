@@ -5,7 +5,7 @@ namespace SimpleOs{
 	public class Process{
 		public int Id {get;}
 		public Action Task {get;}
-
+		public bool Finished;
 
 		public Process(int id, Action task){
 			Id = id;
@@ -46,7 +46,28 @@ namespace SimpleOs{
 			}else{
 				Console.WriteLine($"ProcessManager: Process {id} not found");
 			}
+		}
+		
 
+		public void RunAllProcesses(){
+		
+			int processIndex = 0;
+
+			while(processes.Count > 0){
+				
+				var process = processes[processIndex];
+				if(!process.Finished){
+					Console.WriteLine($"ProcessManager: Running process {process.Id}");
+					process.Run();
+				}else{
+				
+					processes.RemoveAt(processIndex);
+					processIndex--;
+				}
+
+				processIndex = (processIndex + 1) % process.Count;
+				
+			}
 		}
 	}
 }
