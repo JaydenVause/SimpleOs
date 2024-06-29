@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\jamja\\OneDrive\\Desktop\\Code\\C# Code\\C# In a nutshell\\SimpleOs\\SimpleOs.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\jamja\\OneDrive\\Desktop\\Code\\C# Code\\C# In a nutshell\\SimpleOs\\SimpleOs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jamja\\OneDrive\\Desktop\\Code\\C# Code\\C# In a nutshell\\SimpleOs\\SimpleOs.csproj",
+        "projectName": "SimpleOs",
+        "projectPath": "C:\\Users\\jamja\\OneDrive\\Desktop\\Code\\C# Code\\C# In a nutshell\\SimpleOs\\SimpleOs.csproj",
+        "packagesPath": "C:\\Users\\jamja\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jamja\\OneDrive\\Desktop\\Code\\C# Code\\C# In a nutshell\\SimpleOs\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jamja\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
