@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SimpleOs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfbde0a56ae8ad0b3827825e3d2db9519d773383")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebcb59544d63e6bf5440df64c47693d800e1bcb9")]
 [assembly: System.Reflection.AssemblyProductAttribute("SimpleOs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SimpleOs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

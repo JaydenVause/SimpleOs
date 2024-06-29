@@ -5,11 +5,13 @@ namespace SimpleOs{
 		private byte[] memory;
 		private int memorySize;
 		private MemoryManager memoryManager;
-
+		private ProcessManager processManager;
+	
 		public VirtualMachine(int memorySize){
 			this.memorySize = memorySize;
 			memory = new byte[memorySize];
 			memoryManager = new(memory);
+			processManager = new();
 		}
 
 		public void Initialize(){
@@ -28,17 +30,24 @@ namespace SimpleOs{
 
 		private void Kernel(){
 			Console.WriteLine("Kernel: OS is running!");
+
+			Console.WriteLine("Kernel: Creating a process...");
+			int processId = processManager.CreateProcess(() => {
+				Console.WriteLine("Process: Running task...");
+				
+				for(int i = 0; i < 3; i ++){
+					Console.WriteLine($"Process: Task itteration {i}");
+				}		
+			});
 			
+			// run sample process
+			Console.WriteLine("Kernel: Running process...");
+			processManager.RunProcess(processId);
 
-			Console.WriteLine("Kernel: Allocating memory...");
+			// kill sample process
+			Console.WriteLine("Kernel: Killing process");
+			processManager.KillProcess(processId);
 
-			int address = memoryManager.Allocate(100); // allocate 100 bytes of memory
-
-			Console.WriteLine("Kernel: Using allocated memory");
-
-			//free up memory
-			Console.WriteLine("Kernel: Freeing memory...");
-			memoryManager.Free(address, 100);
 		}
 
 
