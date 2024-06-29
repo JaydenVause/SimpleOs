@@ -1,0 +1,15 @@
+C:\Users\jamja\OneDrive\Desktop\Code\C# Code\C# In a nutshell\SimpleOs\bin\Debug\net8.0\SimpleOs.exe
+C:\Users\jamja\OneDrive\Desktop\Code\C# Code\C# In a nutshell\SimpleOs\bin\Debug\net8.0\SimpleOs.deps.json
+C:\Users\jamja\OneDrive\Desktop\Code\C# Code\C# In a nutshell\SimpleOs\bin\Debug\net8.0\SimpleOs.runtimeconfig.json
+C:\Users\jamja\OneDrive\Desktop\Code\C# Code\C# In a nutshell\SimpleOs\bin\Debug\net8.0\SimpleOs.dll
+C:\Users\jamja\OneDrive\Desktop\Code\C# Code\C# In a nutshell\SimpleOs\bin\Debug\net8.0\SimpleOs.pdb
+C:\Users\jamja\OneDrive\Desktop\Code\C# Code\C# In a nutshell\SimpleOs\obj\Debug\net8.0\SimpleOs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jamja\OneDrive\Desktop\Code\C# Code\C# In a nutshell\SimpleOs\obj\Debug\net8.0\SimpleOs.AssemblyInfoInputs.cache
+C:\Users\jamja\OneDrive\Desktop\Code\C# Code\C# In a nutshell\SimpleOs\obj\Debug\net8.0\SimpleOs.AssemblyInfo.cs
+C:\Users\jamja\OneDrive\Desktop\Code\C# Code\C# In a nutshell\SimpleOs\obj\Debug\net8.0\SimpleOs.csproj.CoreCompileInputs.cache
+C:\Users\jamja\OneDrive\Desktop\Code\C# Code\C# In a nutshell\SimpleOs\obj\Debug\net8.0\SimpleOs.sourcelink.json
+C:\Users\jamja\OneDrive\Desktop\Code\C# Code\C# In a nutshell\SimpleOs\obj\Debug\net8.0\SimpleOs.dll
+C:\Users\jamja\OneDrive\Desktop\Code\C# Code\C# In a nutshell\SimpleOs\obj\Debug\net8.0\refint\SimpleOs.dll
+C:\Users\jamja\OneDrive\Desktop\Code\C# Code\C# In a nutshell\SimpleOs\obj\Debug\net8.0\SimpleOs.pdb
+C:\Users\jamja\OneDrive\Desktop\Code\C# Code\C# In a nutshell\SimpleOs\obj\Debug\net8.0\SimpleOs.genruntimeconfig.cache
+C:\Users\jamja\OneDrive\Desktop\Code\C# Code\C# In a nutshell\SimpleOs\obj\Debug\net8.0\ref\SimpleOs.dll
