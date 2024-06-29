@@ -31,9 +31,41 @@ namespace SimpleOs{
 		private void Kernel(){
 			Console.WriteLine("Kernel: OS is running!");
 
+			while(true){
+				Console.Write("Kernel> ");
+				string userInput = Console.ReadLine();
+
+
+				if(userInput == null){
+					Console.WriteLine("Kernel: Error - User input was null");
+					continue;
+				}
+
+				string[] commandParts = userInput.Split(' ');
+
+				switch(commandParts[0].ToLower()){
+					case "create":
+						processManager.CreateProcess(()=>{
+							Console.WriteLine($"Process: Running");
+						});
+						break;
+					case "run":
+						processManager.RunAllProcesses();
+						break;
+					case "exit":
+						Console.WriteLine("Kernel: Shutting down...");
+						break;
+					default:
+						Console.WriteLine($"Kernel> Uknown Command `{commandParts[0]}`");
+						break;
+				}
+			}
+
 			Console.WriteLine("Kernel: Creating a process...");
 			processManager.CreateProcess(()=>{Console.WriteLine("HelloWorld");});
+			processManager.CreateProcess(()=>{Console.WriteLine("GOODBYEWorld");});
 
+			Console.WriteLine("Kernel: Running all processes");	
 			processManager.RunAllProcesses();
 		}
 
